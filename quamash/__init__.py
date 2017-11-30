@@ -171,6 +171,7 @@ def _make_signaller(qtimpl_qtcore, *args):
 	return Signaller()
 
 
+@with_logger
 class _SimpleTimer(QtCore.QObject):
 	#__slots__ = 'callback', 'timer_id', 'stopped'
 	def __init__(self):
